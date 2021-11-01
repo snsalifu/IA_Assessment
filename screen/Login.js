@@ -80,12 +80,12 @@ const Login = () => {
                         <Line />
                         <StyledButton google={true} onPress={handleSubmit}>
                             <Fontisto name='google' color={primary} size={25}/>
-                            <ButtonText  google={true}>Sign in with Google</ButtonText>
+                            <ButtonText  google={true}>"Sign in with Google"</ButtonText>
                         </StyledButton>
                         <ExtraView>
-                            <ExtraText>Don't have an account already?</ExtraText>
+                            <ExtraText>"Don't have an account already?"</ExtraText>
                             <TextLink>
-                                <TextLinkContent>Signup</TextLinkContent>
+                                <TextLinkContent>"Signup"</TextLinkContent>
                             </TextLink>
                         </ExtraView>
                         </StyledFormArea>
