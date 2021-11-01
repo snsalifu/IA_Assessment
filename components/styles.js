@@ -7,7 +7,7 @@ const StatusBarHeight = Constants.StatusBarHeight;
 //colors
 export const Colors = {
     primary: "#ffffff",
-    seconadary: "#E5E7EB",
+    secondary: "#E5E7EB",
     tertiary: "#1F2937",
     darkLight: "#9CA3AF",
     brand: "#6D28D9",
@@ -86,7 +86,7 @@ export const LeftIcon = styled.View`
 `;
 
 export const RightIcon = styled.TouchableOpacity`
-  left: 15px;
+  right: 15px;
   top: 38px;
   position: absolute;
   z-index: 1;
@@ -97,14 +97,65 @@ export const StyledButton = styled.TouchableOpacity`
   background-color: ${brand};
   justify-content: center;
   align-items: center;
+  align-items: center;
   border-radius: 5px;
   margin-vertical: 5px;
   height: 60px;
   
+  ${(props) => props.google ==true && `
+    background-color: ${green};
+    flex-direction: row;
+    justify-content: center;
+  `}  
 `;
 
 export const ButtonText = styled.Text`
   color: ${primary};
   font-size: 16px;
+
+  ${(props) => props.google ==true && `
+    padding: 25px;
+
+`}  
  
 `;
+
+export const MsgBox = styled.Text`
+    text-align: center;
+    font-size: 13px;
+`;
+
+export const Line = styled.Text`
+    height: 1px;
+    width: 100%;
+    backgrounf-color: ${darkLight};
+    margin-vertical: 10px;
+`;
+
+export const ExtraView = styled.View`
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+`;
+
+export const ExtraText = styled.View`
+    justify-content: center;
+    align-content: center;
+    color: ${tertiary};
+    font-size: 15px;
+
+`;
+
+export const TextLink = styled.TouchableOpacity`
+    justify-content: center;
+    align-content: center;
+`;
+
+export const TextLinkContent = styled.Text`
+    color: ${brand};
+    font-size: 15px;
+`;
+
+
+
