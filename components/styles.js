@@ -13,14 +13,15 @@ export const Colors = {
     brand: "#6D28D9",
     green: "#10B981",
     red: "#EF4444",
+
 };
 
-const {primary, secondary, tertiary, darkLight, brand, green, red,} = Colors;
+const { primary, secondary, tertiary, darkLight, brand, green } = Colors;
 
 export const StyledContainer = styled.View`
     flex: 1;
     padding: 25px;
-    padding-top: ${StatusBarHeight +10}px;
+    padding-top: ${StatusBarHeight +30}px;
     background-color:${primary};
 
 `;
@@ -92,8 +93,7 @@ export const SubTitle = styled.Text`
 export const StyledFormArea = styled.View`
     width: 90%;
     
-    `;
-
+    `
 export const StyledTextInput = styled.TextInput`
         background-color: ${secondary};
         padding: 15px;
@@ -105,14 +105,14 @@ export const StyledTextInput = styled.TextInput`
         margin-vertical: 3px;
         margin-bottom: 10px;
         color: ${tertiary};
-`;
+`
 
 export const  StyledInputLabel = styled.Text`
     color: ${tertiary};
     font-size: 15px;
     text-align: left;
 
-`;
+`
 
 export const LeftIcon = styled.View`
   left: 15px;
