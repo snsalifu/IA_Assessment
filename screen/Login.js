@@ -24,10 +24,11 @@ import{
     ExtraView,
     ExtraText,
     TextLink,
-    TextLinkContent
+    TextLinkContent,
+    
     
 } from './../components/styles';
-import { View } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 const {brand, darkLight, primary} = Colors;
 
@@ -76,7 +77,7 @@ const Login = ({navigation}) => {
                 />
                 <MsgBox>...</MsgBox>
                
-                  <StyledButton onPress={handleSubmit}>
+                  <StyledButton  onPress={() => navigation.navigate('Signup')}  onPress={() => navigation.navigate('Welcome')}>
                     <ButtonText>Login</ButtonText>
                   </StyledButton>
                 

@@ -18,7 +18,7 @@ import{
 } from './../components/styles';
 
 
-const Welcome = (navigation) => {
+const Welcome = ({navigation}) => {
 
     return (
         <>
@@ -32,8 +32,8 @@ const Welcome = (navigation) => {
                     <StyledFormArea>
                         <Avatar resizeMode="cover" source={require('./../assets/Logo.jpg')}/>
                         <Line />
-                        <StyledButton onPress ={() =>navigation.navigate("Login")}>
-                            <ButtonText>Logout</ButtonText>
+                        <StyledButton onPress ={() =>navigation.navigate("Home")}>
+                            <ButtonText>Login</ButtonText>
                         </StyledButton>
                       
                     </StyledFormArea>
