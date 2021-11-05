@@ -181,37 +181,7 @@ export default function Home(params) {
         }}
         />
     </SafeAreaView>
- )
-
-        // onClickAddCart(data)
-        // {
-        //     const itemcart = {
-        //         bike:data,
-        //         quantity: 1,
-        //         price:data.price,
-        
-        //     }
-        
-        //     AsyncStorage.getItem('cart').then((datacart)=>{
-        //         if (datacart!==null) {
-        //             const cart = JSON.parse(datacart)
-        //             cart.push(datacart)
-        //             AsyncStorage.setItem('cart',JSON.stringify(cart))
-        
-        //         }
-        //         else{
-        //             const cart = []
-        //             cart.push(itemcart)
-        //             AsyncStorage.setItem('cart',JSON.stringify(cart))
-        //         }
-        //         alert('Added Successfully')
-        
-        //     })
-        
-        //     .catch((error)=>{
-        //         alert(error)
-        //     })
-        // }
+)
 };
 
 
