@@ -31,10 +31,7 @@ const showAlert = () =>
             ],
             {
             cancelable: true,
-            // onDismiss: () =>
-            //     Alert.alert(
-            //     "opps"
-            //     ),
+           
             }
         );
 
@@ -102,20 +99,7 @@ export default function Home(params) {
                 marginTop: 5,
             }}>
                 <Text style={{fontSize: 19, paddingRight: 30, fontWeight: 'bold'}}>${bike.price}</Text>
-            {/* <TouchableOpacity 
-            style={{
-                    height: 25,
-                    width: 25,
-                    backgroundColor: 'orange',
-                    borderRadius: 5,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                }}>
-                    onPress={() => {showAlert}}
             
-                <Text style={{fontSize: 24, fontWeight: 'bold'}}>+</Text>
-                
-            </TouchableOpacity> */}
             <View style={styles.container}>
                 <Button title="+" color='orange' onPress={showAlert} />
             </View>
