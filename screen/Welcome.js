@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import { StatusBar } from "expo-status-bar";
 
 
@@ -10,15 +10,15 @@ import{
     StyledButton,
     ButtonText,
     Line,
-    WelcomeContainer, 
+    WelcomeContainer,
     WelcomeImage,
     Avatar
 
-    
+
 } from './../components/styles';
 
 
-const Welcome = () => {
+const Welcome = ({navigation}) => {
 
     return (
         <>
@@ -32,12 +32,12 @@ const Welcome = () => {
                     <StyledFormArea>
                         <Avatar resizeMode="cover" source={require('./../assets/Logo.jpg')}/>
                         <Line />
-                        <StyledButton onPress={() => {}}>
-                            <ButtonText>Logout</ButtonText>
+                        <StyledButton onPress ={() =>navigation.navigate("Home")}>
+                            <ButtonText>Login</ButtonText>
                         </StyledButton>
-                      
+
                     </StyledFormArea>
-                
+
                 </WelcomeContainer>
             </InnerContainer>
         </>
@@ -45,5 +45,3 @@ const Welcome = () => {
 }
 
 export default Welcome;
-
-
