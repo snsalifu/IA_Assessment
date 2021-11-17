@@ -56,7 +56,7 @@ function Payment(params) {
           color: "orange",
           fontWeight: "400",
         },
-      
+        
         inputContainer: {
           height: 50,
           borderWidth: 0.5,

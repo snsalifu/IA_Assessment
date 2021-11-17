@@ -70,7 +70,6 @@ function Detailed({navigation, route}) {
                                 <TouchableOpacity style={styles.borderBtn}>
                                     <Text style={styles.borderBtnText}>+</Text>
                                 </TouchableOpacity>
-                                
                             </View>
                             <TouchableOpacity 
                             onPress={() => {

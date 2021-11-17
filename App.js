@@ -8,6 +8,8 @@ import Login from './screen/Login';
 import Signup from './screen/Signup';
 import Welcome from './screen/Welcome';
 import About from './screen/About';
+import Payment from './screen/Payment';
+import Cart from './screen/Cart';
 import colours from './consts/colours';
 import { StyleSheet, Text, View } from "react-native";
 
@@ -38,11 +40,12 @@ const App = () => {
                 <Stack.Screen name="onBoard" component={onBoard}/>
                 <Stack.Screen name="Signup" component={Signup}/>
                 <Stack.Screen name="Welcome" component={Welcome}/>
-                
-                
+                <Stack.Screen name="Payment" component={Payment}/>
+                <Stack.Screen name="Cart" component={Cart}/>
+
             </Stack.Navigator>
         </NavigationContainer>
-      );
+    );
 };
 
 const styles = StyleSheet.create({
