@@ -27,14 +27,9 @@ const App = () => {
                     backgroundColor: 'transparent'
 
                 },
-                headerTintColor: '#1F2937',
-                headerTransparent: true,
-                headerTitle: '',
-                headerLeftContainerStyle: {
-                    paddingLeft: 20
-                }
+               
                 
-            }}
+               }}
             >
                 <Stack.Screen name="Login" component={Login}/>
                 <Stack.Screen name="Home" component={Home}/>
