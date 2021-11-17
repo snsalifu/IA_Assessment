@@ -29,12 +29,13 @@ import{
 } from './../components/styles';
 import { View } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
 
 const {brand, darkLight, primary} = Colors;
 
-const Login = () => {
+const Login = (params) => {
     const [hidePassword, setHidePassword] = useState(true)
-
+    const navigation = params.navigation;
     return (
         <StyledContainer>
             <StatusBar style='dark' />
@@ -76,9 +77,11 @@ const Login = () => {
                           />
                           <MsgBox>...</MsgBox>
                         
-                          <StyledButton onPress={handleSubmit}>
+                          <TouchableOpacity onPress={() => navigation.navigate('Welcome')}>
+                          <StyledButton onPress={handleSubmit} >
                               <ButtonText>Login</ButtonText>
                           </StyledButton>
+                          </TouchableOpacity>
                         <Line />
                        
                         
@@ -86,12 +89,12 @@ const Login = () => {
                             <Fontisto name='google' color={primary} size={25}/>
                             <ButtonText  google={true}>"Sign in with Google"</ButtonText>
                         </StyledButton>
-                        <ExtraView>
-                            <ExtraText>"Don't have an account already?"</ExtraText>
-                            <TextLink>
-                                <TextLinkContent>"Signup"</TextLinkContent>
-                            </TextLink>
-                        </ExtraView>
+                          <ExtraView>
+                              <ExtraText>"Don't have an account already?"</ExtraText>
+                              <TextLink onPress={() => navigation.navigate('Signup')}>
+                                  <TextLinkContent>"Signup"</TextLinkContent>
+                              </TextLink>
+                          </ExtraView>
                         </StyledFormArea>
                     )}
                 </Formik>

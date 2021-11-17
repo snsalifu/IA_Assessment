@@ -33,11 +33,9 @@ const Welcome = ({navigation}) => {
                         <Avatar resizeMode="cover" source={require('./../assets/Logo.jpg')}/>
                         <Line />
                         <StyledButton onPress ={() =>navigation.navigate("Home")}>
-                            <ButtonText>Login</ButtonText>
+                            <ButtonText>Home</ButtonText>
                         </StyledButton>
-
                     </StyledFormArea>
-
                 </WelcomeContainer>
             </InnerContainer>
         </>
