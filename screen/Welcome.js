@@ -10,11 +10,11 @@ import{
     StyledButton,
     ButtonText,
     Line,
-    WelcomeContainer, 
+    WelcomeContainer,
     WelcomeImage,
     Avatar
 
-    
+
 } from './../components/styles';
 
 
@@ -35,9 +35,9 @@ const Welcome = ({navigation}) => {
                         <StyledButton onPress ={() =>navigation.navigate("Home")}>
                             <ButtonText>Login</ButtonText>
                         </StyledButton>
-                      
+
                     </StyledFormArea>
-                
+
                 </WelcomeContainer>
             </InnerContainer>
         </>
@@ -45,5 +45,3 @@ const Welcome = ({navigation}) => {
 }
 
 export default Welcome;
-
-

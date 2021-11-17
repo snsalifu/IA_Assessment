@@ -12,7 +12,7 @@ import{
     PageTitle,
     SubTitle,
     StyledFormArea,
-    LeftIcon, 
+    LeftIcon,
     StyledInputLabel,
     StyledTextInput,
     RightIcon,
@@ -25,8 +25,8 @@ import{
     ExtraText,
     TextLink,
     TextLinkContent,
-    
-    
+
+
 } from './../components/styles';
 import { View, Text, StyleSheet } from 'react-native';
 
@@ -76,23 +76,23 @@ const Login = ({navigation}) => {
                   setHidePassword={setHidePassword}
                 />
                 <MsgBox>...</MsgBox>
-               
+
                   <StyledButton  onPress={() => navigation.navigate('Signup')}  onPress={() => navigation.navigate('Welcome')}>
                     <ButtonText>Login</ButtonText>
                   </StyledButton>
-                
-                
-                
+
+
+
 
                 <Line />
 
-                
+
                   <StyledButton onPress={handleSubmit} google={true} size={30}>
                     <Fontisto name="google"  color={primary} />
                     <ButtonText google={true} >Sign in with Google</ButtonText>
                   </StyledButton>
-               
-                
+
+
 
                 <ExtraView>
                   <ExtraText>Don't have an account already? </ExtraText>
@@ -105,7 +105,7 @@ const Login = ({navigation}) => {
           </Formik>
         </InnerContainer>
       </StyledContainer>
-    
+
   );
 };
 
@@ -131,10 +131,3 @@ const MyTextInput = ({ label, icon, isPassword, hidePassword, setHidePassword, .
 };
 
 export default Login;
-
-
-
-
-    
-
- 
